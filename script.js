@@ -1,6 +1,6 @@
 var formdata = new FormData();
 formdata.append("type", "Thick Horizontal, Horizontal Strip");
-formdata.append("tags", "car,maintanence,blog,automotive,tipd");
+formdata.append("tags", "car,maintenance,blog,automotive,tips, mechanic,conversation");
 
 var ajax = new XMLHttpRequest();
 ajax.addEventListener("load", completeHandler, false);
