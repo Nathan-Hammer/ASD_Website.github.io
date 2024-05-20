@@ -3,7 +3,7 @@ formdata.append("type", "Thick Horizontal, Horizontal Strip");
 formdata.append("tags", "car,maintenance,blog,automotive,tips,mechanic,conversation");
 
 var ajax = new XMLHttpRequest();
-ajax.addEventListener("load", completeHandler, true); // Changed to true to capture both load and error events
+ajax.addEventListener("load", completeHandler, true); 
 
 ajax.open("POST", "https://ad.simaneka.com/api/get");
 ajax.setRequestHeader("Authorization", "oK8T7ocigzWnY0RGNv5UzfBx33GSEFa5"); // Corrected typo
