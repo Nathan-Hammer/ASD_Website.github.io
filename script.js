@@ -1,12 +1,16 @@
 var formdata = new FormData();
 formdata.append("type", "Thick Horizontal, Horizontal Strip");
-formdata.append("tags", "car,maintenance,blog,automotive,tips, mechanic,conversation");
+formdata.append("tags", "car,maintenance,blog,automotive,tips,mechanic,conversation");
 
 var ajax = new XMLHttpRequest();
-ajax.addEventListener("load", completeHandler, false);
+ajax.addEventListener("load", completeHandler, true); // Changed to true to capture both load and error events
 
 ajax.open("POST", "https://ad.simaneka.com/api/get");
-ajax.setRequestHeader("authorisation", "oK8T7ocigzWnY0RGNv5UzfBx33GSEFa5");
+ajax.setRequestHeader("Authorization", "oK8T7ocigzWnY0RGNv5UzfBx33GSEFa5"); // Corrected typo
+
+ajax.onerror = function() { // Added error handling
+    console.error("AJAX request failed.");
+};
 
 ajax.send(formdata);
 
