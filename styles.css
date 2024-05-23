@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-image: url('images/Background.jpeg'); 
+  background-image: url('/images/Background.jpeg'); 
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center;
@@ -38,7 +38,7 @@ footer {
 }
 
 .featured-article {
-  color: black;
+  color: white;
 }  
 
 .blog-post {
